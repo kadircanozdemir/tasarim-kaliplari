@@ -1,0 +1,28 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+abstract class Menu{
+  {field} - menuItems : String
+  {method} + setMenuItems()
+  {method} + getSetMenuItems()
+  {method} + drawMenu()
+  {method} + addMenu()
+  {abstract} + clone()
+}
+
+class UserMenu  {
+  {method} + clone()
+  {method} + toString()
+}
+class VisitorMenu  {
+  {method} + clone()
+  {method} + toString()
+}
+
+
+
+Menu <|-- UserMenu
+Menu <|-- VisitorMenu
+
+@enduml
