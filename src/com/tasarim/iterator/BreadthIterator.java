@@ -36,6 +36,9 @@ public class BreadthIterator implements Iterator {
     public void next() {
 
         index++;
+        if (hasNextLevel()) {
+            nextLevel();
+        }
     }
 
     public void nextLevel() {
@@ -45,8 +48,10 @@ public class BreadthIterator implements Iterator {
     }
 
     public Object currentItem() {
-
-        return tree.get(index);
+        if (tree.get(index) != null) {
+            return tree.get(index);
+        }
+        return false;
     }
 
 }
