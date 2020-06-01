@@ -81,7 +81,26 @@ public class Main {
         hospital.addEmployee(doctor);
         hospital.addEmployee(nurse);
 
-        hospital.showIds();
+        Hospital hospital2 = new Hospital();
+
+        Doctor doctor2 = new Doctor();
+        Nurse nurse2 = new Nurse();
+
+        Hospital hospital3 = new Hospital();
+
+        Doctor doctor3 = new Doctor();
+        Nurse nurse3 = new Nurse();
+
+        hospital2.addEmployee(doctor2);
+        hospital2.addEmployee(nurse2);
+
+        hospital3.addEmployee(doctor3);
+        hospital3.addEmployee(nurse3);
+
+        hospital2.addEmployee(hospital3);
+        hospital.addEmployee(hospital2);
+
+        hospital.getEmployeeId();
 
     }
 }

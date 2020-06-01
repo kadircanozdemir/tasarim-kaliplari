@@ -2,7 +2,7 @@ package com.tasarim.composite;
 
 import java.util.ArrayList;
 
-public class Hospital {
+public class Hospital implements Identity {
 
     private ArrayList<Identity> employeeList = new ArrayList<Identity>();
 
@@ -10,9 +10,9 @@ public class Hospital {
         employeeList.add(identity);
     }
 
-    public void showIds() {
+    public void getEmployeeId() {
         for (Identity item : employeeList) {
-            System.out.println(item.getEmployeeId());
+            item.getEmployeeId();
         }
     }
 }
