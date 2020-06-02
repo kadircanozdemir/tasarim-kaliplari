@@ -1,12 +1,12 @@
-package com.tasarim.visitorfinal;
+package com.tasarim.visitor;
 
-public class Hotel implements PriceAcceptor {
+public class Tent implements PriceAcceptor {
 
     private double price;
     private double rentPrice;
     private String description;
 
-    public Hotel(double price, String description) {
+    public Tent(double price, String description) {
         this.setPrice(price);
         this.setDescription(description);
     }

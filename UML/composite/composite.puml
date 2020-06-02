@@ -1,0 +1,42 @@
+@startuml
+skinparam classAttributeIconSize componentStyle uml2
+
+class Field  {
+    -description
+    -kisiSayisi
+    -campList
+    
+    +addCamp()
+}
+
+interface CampField  {
+    +showInfo(PriceCalculator)
+}
+
+class CampTent {
+    -description
+    -kisiSayisi
+}
+class Bungalov  {
+-description
+    -kisiSayisi
+}
+
+class Client  {
+    {static} +run()
+}
+
+
+
+
+CampField <|.. CampTent
+CampField <|.. Bungalov
+
+Field o--> "1..*" CampField : campList
+CampField <|.. Field
+
+
+Client --> CampField
+
+
+@enduml

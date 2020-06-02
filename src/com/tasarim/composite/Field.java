@@ -1,4 +1,4 @@
-package com.tasarim.compositefinal;
+package com.tasarim.composite;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class Field implements CampField {
     private int kisiSayisi;
     private String description;
 
-    private ArrayList<CampField> campList = new ArrayList<CampField>();
+    private ArrayList<CampField> campList = new ArrayList<>();
 
     public Field(int kisiSayisi, String description) {
         this.setKisiSayisi(kisiSayisi);

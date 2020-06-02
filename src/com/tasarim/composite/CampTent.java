@@ -1,4 +1,4 @@
-package com.tasarim.compositefinal;
+package com.tasarim.composite;
 
 import com.tasarim.Main;
 

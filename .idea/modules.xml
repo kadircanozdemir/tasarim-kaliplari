@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Tasarim.wiki.iml" filepath="$PROJECT_DIR$/Tasarim.wiki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasarim-kaliplari.iml" filepath="$PROJECT_DIR$/tasarim-kaliplari.iml" />
     </modules>
   </component>
 </project>

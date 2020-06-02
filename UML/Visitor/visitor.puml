@@ -1,0 +1,43 @@
+@startuml
+skinparam classAttributeIconSize componentStyle uml2
+
+interface PriceAcceptor  {
+    +accept(PriceCalculator)
+}
+
+interface PriceCalculator  {
+    +calculate(Hotel)
+    +calculate(Tent)
+}
+
+class Hotel  {
+    -price
+    -rentPrice
+    -description
+}
+class Tent  {
+    -price
+    -rentPrice
+    -description
+}
+class WinterCalculator  {
+}
+class SummerCalculator  {
+}
+
+class Client  {
+    {static} +run()
+}
+
+
+PriceAcceptor <|.. Hotel
+PriceAcceptor <|.. Tent
+
+PriceCalculator <|.. WinterCalculator
+PriceCalculator <|.. SummerCalculator
+
+Client --> PriceAcceptor
+Client --> PriceCalculator
+
+
+@enduml

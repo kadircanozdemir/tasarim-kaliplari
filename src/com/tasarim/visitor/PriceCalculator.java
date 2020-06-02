@@ -1,4 +1,4 @@
-package com.tasarim.visitorfinal;
+package com.tasarim.visitor;
 
 public interface PriceCalculator {
     void calculate(Hotel hotel);
